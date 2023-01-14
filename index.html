@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>PION</title>
+</head>
+<body>
+	<div id="navbar">
+		<div>
+			<h1>PI<span>ON</span></h1>
+			<a href="game.html"><button class="custom-btn btn-1">Rock, Paper, Scissors</button></a>
+		</div>
+		<nav>
+	    </nav>
+	</div>
+	</div>
+	<main class="app">
+		<section class="greeting">
+			<h2 class="title">
+				How's it going, <input type="text" id="name" placeholder="Name here" />
+			</h2>
+		</section>
+
+		<section class="create-todo">
+			<h3>CREATE A TASK</h3>
+			<form id="new-todo-form">
+				<h4>What's your task?</h4>
+				<input 
+				type="text" 
+				placeholder="ex. finish my homework"
+				name="content"
+				id="content" />
+
+				<h3>CATEGORY</h3>
+				<h4>Pick a category</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+						<span class="bubble business"></span>
+						<div>Work</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add" />
+			</form>
+		</section>
+
+		<section class="todo-list">
+			<h3>TASK LIST</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
